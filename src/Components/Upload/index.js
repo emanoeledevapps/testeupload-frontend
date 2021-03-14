@@ -21,7 +21,7 @@ export default class Upload extends Component{
         const {onUpload} = this.props;
 
         return(
-            <Dropzone accept='image/*' onDropAccepted={onUpload}>
+            <Dropzone accept='*' onDropAccepted={onUpload}>
                 {({getRootProps, getInputProps, isDragActive, isDragReject}) => (
                     <DropContainer
                         {...getRootProps()}
