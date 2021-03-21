@@ -2,23 +2,23 @@ import React from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import {MdCheckCircle, MdError, MdLink} from 'react-icons/md';
 
-import {Container, FileInfo, Preview} from './styles';
+import {Container, FileInfo, Preview, TextNome, ViewInfo} from './styles';
 
 const FileList = ({files, onDelete}) => (
     <Container>
         {files.map(uploadedFile => (
             <li key={uploadedFile.id}>
-            <FileInfo>
+              <FileInfo>
                 <Preview src={uploadedFile.preview}/>
                 <div>
-                    <strong>{uploadedFile.name}</strong>
-                    <span>{uploadedFile.readableSize}
-                        {!!uploadedFile.url &&  (
-                            <button onClick={() => onDelete(uploadedFile.id)}>Excluir</button>
-                        )} 
-                    </span>
+                <strong numberOfLines={1}>{uploadedFile.name}</strong>
+                <span>{uploadedFile.readableSize}
+                    {!!uploadedFile.url &&  (
+                        <button onClick={() => onDelete(uploadedFile.id)}>Excluir</button>
+                    )} 
+                </span>
                 </div>
-            </FileInfo>
+              </FileInfo>
 
             <div>
                 {!uploadedFile.uploaded && !uploadedFile.error && (

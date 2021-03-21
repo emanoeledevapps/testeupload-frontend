@@ -49,3 +49,15 @@ export const Preview = styled.div`
     background-position: 50% 50%;
     margin-right: 10px
 `;
+
+export const TextNome = styled.p`
+    
+`;
+
+export const ViewInfo = styled.div`
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+`;
