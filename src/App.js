@@ -182,7 +182,7 @@ export default class App extends Component{
           <View3>
             {loading ? (
           <View>
-            <Loading>Carregando items</Loading>
+            <Loading>Carregando</Loading>
           <GlobalStyle/>
           </View>
         ) : (
