@@ -5,6 +5,7 @@ import GlobalStyle from './Components/styles/global';
 import {
   Container, 
   Content, 
+  Content2,
   ContainerList, 
   TextDefault, 
   BtnVoltar, 
@@ -312,7 +313,7 @@ export default class App extends Component{
 
           </Content>
         ) : (
-          <Content>
+          <Content2>
           <BtnVoltar onClick={() => this.setState({selectPerfil: true, selectSemana: true})}>Voltar</BtnVoltar>
           <Upload onUpload={this.handleUpload}/>
   
@@ -321,7 +322,7 @@ export default class App extends Component{
               
           )}
   
-          </Content>
+          </Content2>
         )}
         
         <GlobalStyle/>
